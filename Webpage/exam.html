@@ -1,0 +1,28 @@
+<html>
+<head>
+<script type="text/javascript">
+function add()
+{ var n=Number(document.getElementById("num1").value);
+ var n2=Number(document.getElementById("num2").value);
+ var n3=n+n2
+ document.getElementById("Result").value=n3;
+}
+function sub()
+{ var n=Number(document.getElementById("num1").value);
+ var n2=Number(document.getElementById("num2").value);
+ var n3=n-n2
+ document.getElementById("Result").value=n3;
+}
+</script>
+</head>
+<body>
+<h1><center>calculator</center></h1>
+<h3>num1<br>
+<input type='text' id='num1'>
+<br>num2<br>
+<input type='text' id='num2'><br>
+<br><input type='button' value='+' onclick="add();">
+<input type='button' value='-' onclick="sub();">
+<br>Result:<input type='text' id='Result'>
+</body>
+</html>
